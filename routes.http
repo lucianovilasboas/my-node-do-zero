@@ -1,0 +1,36 @@
+
+GET http://localhost:3333/videos
+
+###
+
+GET http://localhost:3333/videos?search=000
+
+###
+
+GET http://localhost:3333/videos?search=001
+
+###
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "title 000", 
+    "description": "description 000",  
+    "duration": "10" 
+}
+
+###
+
+PUT http://localhost:3333/videos/0d5f8e05-db69-4b45-ba0b-2ffa2be20727
+Content-Type: application/json
+
+{
+    "title": "title 000", 
+    "description": "description 000",  
+    "duration": "10" 
+}
+
+###
+
+DELETE http://localhost:3333/videos/0d5f8e05-db69-4b45-ba0b-2ffa2be20727
